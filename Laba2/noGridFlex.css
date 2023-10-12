@@ -88,7 +88,7 @@ body{
 
 .Y {
     height: 10vh;
-    width: 8vw;
+    width: 6vw;
     font-size: calc(var(--size) / 0.9);
     background-color: rgb(255, 251, 0); 
 }
