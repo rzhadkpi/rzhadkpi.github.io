@@ -88,14 +88,14 @@ body{
 
 .Y {
     height: 10vh;
-    width: 6vw;
+    width: 8vw;
     font-size: calc(var(--size) / 0.9);
     background-color: rgb(255, 251, 0); 
 }
 
 .X {
     background-color: rgb(100, 190, 212); 
-    width: 10vw;
+    width: 8vw;
     height: 6vh;
     text-align: right;
 }
