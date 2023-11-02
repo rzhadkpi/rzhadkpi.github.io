@@ -1,0 +1,80 @@
+html, body, main {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.logo {
+    padding-left: 10%;
+}
+
+
+:root {
+    --size: calc(1vh + 1vw);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.photos img {
+    padding-inline: 1%;
+    width: 12%;
+}
+
+.photo2, .photo4{
+    margin-top: 7%;
+}
+
+.main {
+    min-height: 80%;
+    background: linear-gradient(to bottom, rgb(235, 183, 27) 30%, rgb(15, 4, 71) 20%);
+}
+
+.menu{
+    padding-right: 10%;
+    margin: 0;
+    height: 3%;
+    width: 3%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    background-color: rgb(62, 62, 65);
+}
+
+footer p {
+    font-size: calc(var(--size) / 1.6);
+    color: whitesmoke;
+    text-align: center;
+}
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    width: 100%;
+    height: auto;
+
+}
+
+.first-block, .second-block, .third-block, .fourt-block {
+    display: flex;
+    margin: 1%;
+    height: 20%;
+    width: 12%;
+    background-color: whitesmoke;
+}
