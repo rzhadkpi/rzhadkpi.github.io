@@ -36,7 +36,7 @@ header {
 }
 
 .main {
-    min-height: 80%;
+    min-height: 90%;
     background: linear-gradient(to bottom, rgb(235, 183, 27) 30%, rgb(15, 4, 71) 20%);
 }
 
@@ -73,12 +73,12 @@ footer p {
 
 .first-block, .second-block, .third-block, .fourt-block {
     display: flex;
-    margin: 1%;
-    width: 13%;
-    background-color: rgb(255, 255, 255);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1%;
+    width: 13%;
+    background-color: rgb(255, 255, 255);
     border-radius: 7%;
 }
 
