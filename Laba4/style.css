@@ -28,7 +28,7 @@ header {
 
 .photos img {
     padding-inline: 1%;
-    width: 12%;
+    width: 13%;
 }
 
 .photo2, .photo4{
@@ -65,7 +65,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 3%;
     width: 100%;
     height: auto;
 
@@ -74,7 +74,74 @@ footer p {
 .first-block, .second-block, .third-block, .fourt-block {
     display: flex;
     margin: 1%;
-    height: 20%;
-    width: 12%;
-    background-color: whitesmoke;
+    width: 13%;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7%;
+}
+
+.first-block img, .second-block img, .third-block img, .fourt-block img {
+    margin: 10px;
+    width: 35%;
+    height: 30%;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.top-text{
+    font-size: calc(var(--size) / 1.6);
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.middle-text {
+    font-size: calc(var(--size) / 1.8);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(109, 109, 109);
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+a[href="https://classroom.google.com/u/1/c/NjIxOTcwODY0NTM3"] {
+    color: black;
+    font-size: calc(var(--size) / 1.4);
+    text-decoration: underline;
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 840px) {
+    .photos {
+        flex-direction: column;
+    }
+    
+    .photos img {
+        width: 80%;
+        margin-top: 5%;
+
+    }
+
+    .blocks {
+        flex-direction: column;
+    }
+    
+    .first-block, .second-block, .third-block, .fourt-block {
+        width: 80%;
+        margin: 5% auto;
+    }
+    
+    .first-block img, .second-block img, .third-block img, .fourt-block img {
+        width: 30%;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .menu {
+        width: 10%;
+    }
 }
