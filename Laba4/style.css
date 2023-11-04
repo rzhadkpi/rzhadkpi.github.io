@@ -24,11 +24,14 @@ header {
     justify-content: center;
     width: 100%;
     align-items: center;
+    
 }
 
 .photos img {
-    padding-inline: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
     width: 13%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .photo2, .photo4{
@@ -80,6 +83,7 @@ footer p {
     width: 13%;
     background-color: rgb(255, 255, 255);
     border-radius: 7%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .first-block img, .second-block img, .third-block img, .fourt-block img {
@@ -121,7 +125,6 @@ a[href="https://classroom.google.com/u/1/c/NjIxOTcwODY0NTM3"] {
     .photos img {
         width: 80%;
         margin-top: 5%;
-
     }
 
     .blocks {
