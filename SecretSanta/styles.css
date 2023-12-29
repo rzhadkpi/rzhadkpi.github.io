@@ -91,7 +91,7 @@ body {
     z-index: 1000;
 }
 
-.navigation__item{
+.navigation{
     color: #00873E;
     font-family: DMSans;
     font-size: 18px;
@@ -115,7 +115,7 @@ body {
     gap: 32px;
     align-items: center;
 }
-.buttons__sign_in{
+.buttons-sign-in{
     transition: all 0.4s;
     background: transparent;
 
@@ -128,10 +128,8 @@ body {
     text-decoration: none;
     z-index: 1000;
 }
-.navigation__item:hover{
-    scale: 1.2;
-}
-.buttons__log_in{
+
+.buttons-log-in{
     transition: all 0.4s;
     padding: 15px 21px 16px 25px;
     border-radius: 8px;
@@ -146,18 +144,7 @@ body {
     text-decoration: none;
     z-index: 1000;
 }
-.buttons__log_in:hover {
-    color: #00873E;
-    background: transparent;
-    cursor: pointer;
-}
-.buttons__sign_in:hover{
-    cursor: pointer;
-    color:  #00873E;
-}
-.heading__logo--mobile{
-    display: none;
-}
+
 .landing{
     padding: 102px 20px 79px 20px;
     gap:95px;
@@ -204,6 +191,7 @@ body {
 .about_live__island{
     width: 45%;
 }
+
 .image_banner__heading
 {color: #000;
 
@@ -212,8 +200,9 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-margin-bottom: 19px;
-margin-top: 0}
+    margin-bottom: 19px;
+    margin-top: 0
+}
 
 .landing__text_wrapper, .image_banner__text_wrapper, .party_banner__text_wrapper, .about_live__text_wrapper, .gift_items__text_wrapper{
     z-index: 2;
@@ -323,7 +312,6 @@ margin-top: 0}
 }
 .party_banner__heading{
     color: #000;
-
     font-family: Yeseva One;
     font-size: 65px;
     font-style: normal;
@@ -389,11 +377,6 @@ margin-top: 0}
     max-width: fit-content;
     z-index: 100;
 }
-.section__button:hover {
-    background: transparent;
-    color:  #00873E;
-    cursor: pointer;
-}
 
 .landing__hero_image{
     width: 100%;
@@ -402,6 +385,7 @@ margin-top: 0}
     object-fit: contain;
 
 }
+
 .gift_items{
     display: flex;
     flex-direction: column;
@@ -409,10 +393,12 @@ margin-top: 0}
     padding: 0 20px;
     text-align: center;
 }
+
 .gift_items__text_wrapper{
     width: 100%;
     max-width:750px;
 }
+
 .gift_items__heading{
     margin: 0;
     padding-bottom: 16px;
@@ -423,6 +409,7 @@ margin-top: 0}
     font-weight: 400;
     line-height: normal;
 }
+
 .gift_items__description{
     color: #000;
     text-align: center;
@@ -433,6 +420,7 @@ margin-top: 0}
     line-height: 34px; 
     margin-bottom: 90px;
 }
+
 .section_wrapper{
     border-radius: 25px;
     background: #D9F7FF;
@@ -443,6 +431,7 @@ margin-top: 0}
     padding-top: 147px;
     padding-bottom: 140px;
 }
+
 .gift_items__islands{
     padding-top: 90px;
     display: flex;
@@ -450,13 +439,16 @@ margin-top: 0}
     max-width: 1260px;
     justify-content: space-between;
 }
+
 .gift_items__island{
     width: 40%;
 }
+
 .gift_items__image{
     width: 70px;
     height: auto;
 }
+
 .gift_items__island_heading{
     margin-top: 38px;
     margin-bottom: 15px;
@@ -468,6 +460,7 @@ margin-top: 0}
     font-weight: 400;
     line-height: normal;
 }
+
 .gift_items__island_description{
     color: #000;
     text-align: center;
@@ -477,6 +470,7 @@ margin-top: 0}
     font-weight: 400;
     line-height: 34px;
 }
+
 .about_live__heading{
     margin-bottom: 16px;
     margin-top: 0;
@@ -487,6 +481,13 @@ margin-top: 0}
     font-weight: 400;
     line-height: normal;
 }
+
+.about_live__image{
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
 .about_live__description{
     color: #000;
     font-family: DMSans;
@@ -495,11 +496,7 @@ margin-top: 0}
     font-weight: 400;
     line-height: 34px; 
 }
-.about_live__image{
-    height: 70px;
-    width: auto;
-    object-fit: contain;
-}
+
 .about_live__island_heading{
     color: #000;
     font-family: Yeseva One;
@@ -510,6 +507,7 @@ margin-top: 0}
     margin-top: 32px;
     margin-bottom: 15px;
 }
+
 .about_live__island_description{
     color: #000;
     font-family: DMSans;
@@ -518,9 +516,11 @@ margin-top: 0}
     font-weight: 400;
     line-height: 34px;
 }
+
 .about_live__hero_image{
     width: 100%;
 }
+
 .form__heading{
     color: #000;
     font-family: Yeseva One;
@@ -531,6 +531,7 @@ margin-top: 0}
     margin-top: 52px;
     margin-bottom: 16px;
 }
+
 .form__description{
     color: #000;
     font-family: DMSans;
@@ -548,6 +549,7 @@ margin-top: 0}
         display: none;
     }
 }
+
 @media screen and (max-width:768px ){
     .gift_items__islands{
         flex-direction: column;
@@ -561,56 +563,56 @@ margin-top: 0}
         max-height: 70px;
     }
     .image_banner,  .party_banner, .about_live, .contact_form{
-    flex-direction: column;
+        flex-direction: column;
     }
 
     .gift_items__text_wrapper, .contact_form__image_wrapper, .about_live__text_wrapper, .about_live__image_wrapper, .landing__text_wrapper, .image_banner__text_wrapper, .party_banner__text_wrapper,  .landing__image_wrapper, .image_banner__image_wrapper, .party_banner__image_wrapper {
-    width: 100%;
+        width: 100%;
     }
     .landing{
         padding-top: 60px;
     }
     .contact_form__form {
-min-width: 0px;
-}
-.footer__wrapper{
-    flex-direction: column;
-}
-.heading__logo{
+        min-width: 0px;
+    }
+    .footer__wrapper{
+        flex-direction: column;
+    }
+    .heading__logo{
+        display: none;
+    }
+    .heading__navigation {
+        gap: 20px;
+    }
+    .buttons-log-in, .buttons-sign-in{
+        font-size: 15px;
+    }
+    .snow--desktop{
     display: none;
-}
-.heading__navigation {
-    gap: 20px;
-}
-.buttons__log_in, .buttons__sign_in{
-    font-size: 15px;
-}
-.snow--desktop{
- display: none;
-}
-.buttons__log_in {
-    padding: 10px 15px;
-}
-.heading__buttons{
-    gap: 10px;
-}
-.heading__logo{
-    max-height: 50px;
-}
-.navigation__item{
-    font-size: 15px;
-}
-.landing{
-    display: flex;
-    flex-wrap: wrap;
-}
-.landing__heading{
-    font-size: 55px;
-}
-.landing__text_wrapper{
-    width: calc(100% - 20px);
-}
-.landing__image_wrapper{
-    width: calc(100% - 20px);
-}
+    }
+    .buttons-log-in {
+        padding: 10px 15px;
+    }
+    .heading__buttons{
+        gap: 10px;
+    }
+    .heading__logo{
+        max-height: 50px;
+    }
+    .navigation__item{
+        font-size: 15px;
+    }
+    .landing{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .landing__heading{
+        font-size: 55px;
+    }
+    .landing__text_wrapper{
+        width: calc(100% - 20px);
+    }
+    .landing__image_wrapper{
+        width: calc(100% - 20px);
+    }
 }

@@ -7,20 +7,6 @@ function validateForm() {
     button.disabled = !(fullName && email && subject);
 }
 
-function submitForm() {
-    var fullName = document.getElementById('fullName').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-
-    var user = { fullName, email, subject };
-    var users = JSON.parse(localStorage.getItem('users')) || [];
-    users.push(user);
-    localStorage.setItem('users', JSON.stringify(users));
-
-    displayRandomUser(user);
-    document.getElementById('userForm').reset();
-    document.querySelector('.contact_form__button').disabled = true;
-}
 
 function displayRandomUser(lastUser) {
     var users = JSON.parse(localStorage.getItem('users')) || [];
@@ -36,4 +22,19 @@ function displayRandomUser(lastUser) {
     } else {
         alert('Ми надішлемо вашого подопічного згодом.');
     }
+}
+
+function submitForm() {
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+
+    var user = { fullName, email, subject };
+    var users = JSON.parse(localStorage.getItem('users')) || [];
+    users.push(user);
+    localStorage.setItem('users', JSON.stringify(users));
+
+    displayRandomUser(user);
+    document.getElementById('userForm').reset();
+    document.querySelector('.contact_form__button').disabled = true;
 }
