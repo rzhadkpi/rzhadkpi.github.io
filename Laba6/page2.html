@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Laba6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="grid-main">
+        <div class="header">
+            <div class="X">
+                <p>Second Page</p>
+            </div>
+            <div class = "header-text">
+                <p> Лабораторна робота №6</p>
+            </div>
+        </div>
+
+        <div class="fourth">
+            <p id="gimn"><em>Національний Гімн України (повна версія):</em></p>
+            <p id="gimn">Ще не вмерла Україна, і слава, і воля,</p>
+            <p id="gimn">Ще нам, браття молодії, усміхнеться доля.</p>
+            <p id="gimn">Згинуть наші вороженьки, як роса на сонці,</p>
+            <p id="gimn">Запануєм і ми, браття, у своїй сторонці.</p>
+            <p id="gimn">Душу, тіло ми положим за нашу свободу.</p>
+            <p id="gimn">І покажем, що ми, браття, козацького роду.</p>
+            <p id="gimn">Станем, браття, в бій кровавий від Сяну до Дону</p>
+            <p id="gimn">В ріднім краю панувати не дамо нікому;</p>
+            <p id="gimn">Чорне море ще всміхнеться, дід Дніпро зрадіє,</p>
+            <p id="gimn">Ще у нашій Україні доленька наспіє.</p>
+            <p id="gimn">А завзяття, праця щира свого ще докаже,</p>
+            <p id="gimn">Ще ся волі в Україні піснь гучна розляже,</p>
+            <p id="gimn">За Карпати відоб'ється, згомонить степами,</p>
+            <p id="gimn">України слава стане поміж народами.</p>
+        </div>
+
+        <div class="fifth">
+            <div class="tabs-container">
+            
+                <div class="tabs">
+                </div>
+            </div>
+            
+        </div>
+        <div class="third">
+            <p>Україна має багату історію та культуру, а також багато цікавих фактів, які здивують навіть тих, хто добре знайомий з нашою країною. В цій статті ми розглянемо деякі найцікавіші факти про Україну, які заслуговують на вашу увагу</p>
+        </div>
+
+        <div class="first">
+            <nav class="navbar">
+                <ul id="menu">
+                    <li><a href="index.html">Сторінка 1</a></li>
+                    <li><a href="page2.html">Сторінка 2</a></li>
+                </ul>
+            </nav>
+        </div>   
+    </main>
+
+    <div class="footer">
+        <div class="Y">
+            <p>Слава Україні!</p>
+        </div>
+        <div class="footer-text">
+            <p>Автор: Студент групи ІП-23 Жадько Руслан</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function fetchDataAndRefresh() {
+        // Виклик AJAX-запиту для отримання даних з сервера
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'getData.php', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var responseData = JSON.parse(xhr.responseText);
+                // Оновлення вашого об'єкта або виклик функцій для відображення даних
+                updateObject(responseData);
+            }
+        };
+        xhr.send();
+    }
+
+    // Періодичний асинхронний контроль змін
+    setInterval(function () {
+        fetchDataAndRefresh();
+    }, 5000); // Кожні 5 секунд (можна змінити інтервал)
+</script>
+
+</html>

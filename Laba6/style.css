@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --size: calc(1vh + 1vw);
+}
+
+.grid-main {
+    display: grid;
+    grid-template-rows: auto; 
+    grid-template-columns: 1.4fr 2.9fr 1.4fr;
+    grid-template-areas: 
+        "first header header"
+        "first third fourth"
+        "first fifth fourth"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(164, 208, 214);
+    padding: 2%;
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-areas: 
+        "header-text X"
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-areas: 
+        "Y footer-text"
+}
+
+.first {
+    grid-area: first;
+    background-color: rgb(252, 224, 187);
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    height: 25%;
+    grid-area: third;
+    background-color: rgb(142, 212, 151);
+    text-align: end;
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.fourth {
+    grid-area: fourth;
+    text-align: center;
+    background-color: rgba(163, 221, 158, 0.486);
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.footer{
+    grid-area: footer;
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(164, 208, 214);
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.X{
+    grid-area: X;
+    font: 1.4em sans-serif;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+    outline-width: 1px;
+    background-color: rgb(100, 190, 212); 
+}
+
+.Y{ 
+    grid-area: Y;
+    font: 1.4em sans-serif;
+    font-weight: 600;
+    align-self: center;
+    text-align: center;
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+    outline-width: 1px;
+    background-color: rgb(255, 251, 0); 
+}
+
+.X p {
+    font-size: calc(var(--size) / 1);
+}
+
+.Y p{
+    color: rgb(10, 10, 177); 
+    font-size: calc(var(--size) / 1);
+}
+
+footer p{
+    font-size: calc(var(--size) / 1);
+}
+
+.third p { 
+    font-size: calc(var(--size) / 1.7);
+}
+
+.header-text{
+    grid-area: header-text;
+    text-align: center;
+    font-size: calc(var(--size) / 1.2);
+}
+
+.footer-text{
+    grid-area: footer-text;
+    text-align: center;
+    font-size: calc(var(--size) / 1.2);
+}
+
+.header-text p{
+    font-size: calc(var(--size) / 0.9);
+}
+
+.fifth p{
+    font-size: calc(var(--size) / 1.7);
+}
+
+#menu {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10%;
+}
+
+#menu li {
+    margin-bottom: 15%;
+}
+
+#menu a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: calc(var(--size) / 0.9);
+}
+
+.navbar {
+    width: 100%;
+}
+
+#gimn {
+    font-size: calc(var(--size) / 1.5);
+}
+
+.tabs-container {
+    margin-top: 20px;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 1080px) {
+    .grid-main{
+        grid-template-columns: 30% 70%;
+        grid-template-areas:
+                'header      header'
+                'first       third'
+                'first       fifth'
+                'fourth      fourth'
+                'footer      footer';
+    }
+
+    .third {
+        height: 50%;
+    }
+
+    .header-text {
+        justify-self: center;
+    }
+
+    .footer-text {
+        justify-self: center;
+    }
+
+    #gimn {
+        margin: 0.2%;
+    }
+}
+
+@media  (max-width: 720px) {
+    .grid-main{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'header'
+        'first'
+        'third'
+        'fifth'
+        'fourth'
+        'footer';
+    }
+
+    .third {
+        height: 100%;
+    }
+
+    .fifth {
+        grid-template-columns: 20% 80%;
+        grid-template-areas: "first fifth"
+    }
+
+    #menu {
+        margin-top: 1%;
+    }
+
+    #menu li {
+        margin-bottom: 1%;
+        margin-left: 8%;
+        float: left;
+        list-style-type: none;
+    }
+}
