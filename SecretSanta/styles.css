@@ -348,7 +348,6 @@ margin-top: 0}
 }
 .image_banner__description{
     color: #000;
-
     font-family: DMSans;
     font-size: 18px;
     font-style: normal;
@@ -418,8 +417,6 @@ margin-top: 0}
     margin: 0;
     padding-bottom: 16px;
     color: #000;
-
-    /* Heading */
     font-family: Yeseva One;
     font-size: 65px;
     font-style: normal;
@@ -429,13 +426,11 @@ margin-top: 0}
 .gift_items__description{
     color: #000;
     text-align: center;
-
-    /* Paragraph */
     font-family: DMSans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 188.889% */
+    line-height: 34px; 
     margin-bottom: 90px;
 }
 .section_wrapper{
@@ -476,19 +471,16 @@ margin-top: 0}
 .gift_items__island_description{
     color: #000;
     text-align: center;
-/* Paragraph */
     font-family: DMSans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 188.889% */
+    line-height: 34px;
 }
 .about_live__heading{
     margin-bottom: 16px;
     margin-top: 0;
     color: #000;
-
-    /* Heading */
     font-family: Yeseva One;
     font-size: 65px;
     font-style: normal;
@@ -497,13 +489,11 @@ margin-top: 0}
 }
 .about_live__description{
     color: #000;
-
-    /* Paragraph */
     font-family: DMSans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 188.889% */
+    line-height: 34px; 
 }
 .about_live__image{
     height: 70px;
@@ -522,13 +512,11 @@ margin-top: 0}
 }
 .about_live__island_description{
     color: #000;
-
-    /* Paragraph */
     font-family: DMSans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 188.889% */
+    line-height: 34px;
 }
 .about_live__hero_image{
     width: 100%;
@@ -545,13 +533,11 @@ margin-top: 0}
 }
 .form__description{
     color: #000;
-
-    /* Paragraph */
     font-family: DMSans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 188.889% */
+    line-height: 34px;
     margin-bottom: 30px;
 }
 @media screen and (max-width:1240px ){
